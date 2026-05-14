@@ -4,11 +4,11 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 def print_header():
-    print(Fore.CYAN + "CALCMASTER")
-    print(Fore.CYAN + "CALCMASTER")
-    print(Fore.CYAN + "CALCMASTER")
-    print(Fore.CYAN + "CALCMASTER")
-    print(Fore.CYAN + "CALCMASTER")
+    #prints a simple styled CalcMaster title at the head of the scren
+    print()
+    print(Fore.CYAN + Style.Bright +  " CALCMASTER")
+    print(Fore.CYAN + " ------------------")
+   
     print()
 
 def print_success(message):
@@ -23,15 +23,17 @@ def print_prompt(message):
 
 def print_result(operation, result):
     print()
-    print(Fore.CYAN  + "RESULT")
-    print(Fore.CYAN  + "RESULT")
-    print(Fore.CYAN  + "RESULT")
+    print(Fore.CYAN  + " ------------------")
+    print(Fore.CYAN  + " RESULT")
+    print(Fore.CYAN  + " ------------------")
     print(Fore.GREEN + f" {operation} = {result} ")
-    print(Fore.CYAN + "RESULT")
+    print(Fore.CYAN + " -------------------")
     print()
 
-    def print_separator():
+
+def print_separator():
+    #Prints a simple horixontal line to visually separate sections on screen
         print(Fore.CYAN + " ")
     
-    def clear_screen():
+def clear_screen():
         print("\n" * 2)
