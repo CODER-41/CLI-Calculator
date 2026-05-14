@@ -6,7 +6,7 @@ init(autoreset=True)
 def print_header():
     #prints a simple styled CalcMaster title at the head of the scren
     print()
-    print(Fore.CYAN + Style.Bright +  " CALCMASTER")
+    print(Fore.CYAN + Style.BRIGHT +  " CALCMASTER")
     print(Fore.CYAN + " ------------------")
    
     print()
