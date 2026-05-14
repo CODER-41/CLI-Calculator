@@ -19,4 +19,19 @@ def print_error(message):
 
 def print_prompt(message):
     return input(Fore.YELLOW + f"\n {message} \n")
+
+
+def print_result(operation, result):
+    print()
+    print(Fore.CYAN  + "RESULT")
+    print(Fore.CYAN  + "RESULT")
+    print(Fore.CYAN  + "RESULT")
+    print(Fore.GREEN + f" {operation} = {result} ")
+    print(Fore.CYAN + "RESULT")
+    print()
+
+    def print_separator():
+        print(Fore.CYAN + " ")
     
+    def clear_screen():
+        print("\n" * 2)
