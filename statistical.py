@@ -99,7 +99,7 @@ def run_statistical():
             continue
  
         # All operations need a list of numbers so we collect them once here
-        numbers = get_numbers()
+        numbers = get_number()
  
         try:
             if choice == "1":
