@@ -41,7 +41,7 @@ def calc_mode(numbers):
 
 def calc_stdev(numbers):
     # Returns the standard deviation of a list of numbers: a measure of how spread out the numbers are from the mean
-    return statistics.stdev(numbers
+    return statistics.stdev(numbers)
 
 def calc_variance(numbers):
     # Returns the Variance: the average of squared differences from the mean. Variance is the square of standard deviation
