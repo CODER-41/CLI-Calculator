@@ -5,6 +5,7 @@
 from display import (print_header, print_error,
                      print_separator, clear_screen)
 from history import view_history, clear_history
+from scientific import run_scientific
 from colorama import Fore
 
 
@@ -32,8 +33,7 @@ def main():
         choice = input(Fore.YELLOW + "\n  Enter your choice: ").strip()
 
         if choice == "1":
-            print(Fore.YELLOW + "\n  Scientific Calculator coming soon...\n")
-            input(Fore.CYAN + "  Press Enter to go back to the main menu...")
+            run_scientific()
 
         elif choice == "2":
             print(Fore.YELLOW + "\n  Statistical Calculator coming soon...\n")
