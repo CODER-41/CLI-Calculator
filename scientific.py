@@ -102,7 +102,7 @@ def get_number(prompt):
     # of all input validation
     while True:
         try:
-            return float(input(Fore.YELLOW + f " {prompt}: "))
+            return float(input(Fore.YELLOW + f" {prompt}: "))
         except ValueError:
             print_error("Invalid input. Please enter a number.")
 
