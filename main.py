@@ -6,6 +6,7 @@ from display import (print_header, print_error,
                      print_separator, clear_screen)
 from history import view_history, clear_history
 from scientific import run_scientific
+from statistical import run_statistical
 from colorama import Fore
 
 
@@ -36,8 +37,7 @@ def main():
             run_scientific()
 
         elif choice == "2":
-            print(Fore.YELLOW + "\n  Statistical Calculator coming soon...\n")
-            input(Fore.CYAN + "  Press Enter to go back to the main menu...")
+            run_statistical()
 
         elif choice == "3":
             print(Fore.YELLOW + "\n  Financial Calculator coming soon...\n")
